@@ -12,11 +12,11 @@ application on macOS. By default, it associates the file extensions with Visual 
 ## Usage
 - To use the default editor (Visual Studio Code - Insiders), run:
     ```bash
-    $ associate_file_extensions.sh
+    associate_file_extensions.sh
     ```
 - To use a different editor, run:
     ```bash
-    $ associate_file_extensions.sh <app_name>
+    associate_file_extensions.sh <app_name>
     ```
   where `<app_name>` is the name of an editor of your choice.
 
