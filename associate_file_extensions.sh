@@ -18,7 +18,7 @@ function print_red {
 export HOMEBREW_NO_AUTO_UPDATE=1
 brew ls duti &>/dev/null || brew install duti # https://github.com/moretension/duti/
 
-app_name=${@:-Visual Studio Code - Insiders} # https://code.visualstudio.com/insiders/
+app_name=${@:-Visual Studio Code} # https://code.visualstudio.com
 app_id=$(osascript -e "id of app \"${app_name}\"")
 
 extensions=(

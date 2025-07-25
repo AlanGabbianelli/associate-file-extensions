@@ -2,7 +2,7 @@
 
 ## Purpose
 This script is designed to associate various file extensions with a specified
-application on macOS. By default, it associates the file extensions with Visual Studio Code - Insiders (because that's what I use).
+application on macOS. By default, it associates the file extensions with Visual Studio Code (because that's what I use).
 
 ## Dependencies
 - [Homebrew](https://github.com/Homebrew/brew)
@@ -10,7 +10,7 @@ application on macOS. By default, it associates the file extensions with Visual 
 - The application to associate the file extensions with
 
 ## Usage
-- To use the default editor (Visual Studio Code - Insiders), run:
+- To use the default editor (Visual Studio Code), run:
     ```bash
     associate_file_extensions.sh
     ```
