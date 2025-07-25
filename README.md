@@ -1,4 +1,4 @@
-# Associate File Extensions
+# Associate File Extensions on Mac
 
 ## Purpose
 This script is designed to associate various file extensions with a specified
@@ -9,20 +9,8 @@ application on macOS. By default, it associates the file extensions with Visual 
 - [duti](https://github.com/moretension/duti)
 - The application to associate the file extensions with
 
-## Usage
-- To use the default editor (Visual Studio Code), run:
-    ```bash
-    associate_file_extensions.sh
-    ```
-- To use a different editor, run:
-    ```bash
-    associate_file_extensions.sh <app_name>
-    ```
-  where `<app_name>` is the name of an editor of your choice.
-
 ## How it works
-The script defines a few functions for printing colored text to the terminal.
-It then sets the `HOMEBREW_NO_AUTO_UPDATE` environment variable to prevent
+The script sets the `HOMEBREW_NO_AUTO_UPDATE` environment variable to prevent
 `brew` from auto-updating during installation. It installs `duti` via `brew
 install duti` if it's not already installed.
 
@@ -36,10 +24,36 @@ and `<extension>` is the file extension to associate. The `all` flag is used to
 associate the extension with all possible file types (e.g., `public.json`,
 `public.text`, etc.).
 
-The script prints a yellow message to the terminal before running each `duti`
-command to let the user know what command is being executed. If the command is
-successful, it prints a green message. If the command fails, it prints a red
-error message.
+The script runs silently. If a duti command fails to associate an extension,
+it will print the error message from the command directly to the terminal.
+
+## Usage
+
+### Clone the repo
+```bash
+git clone git@github.com:AlanGabbianelli/associate-file-extensions.git
+```
+
+### Move to the repo's directory
+```bash
+cd associate-file-extensions
+```
+
+### Make the script executable
+```bash
+chmod +x ./script.sh
+```
+
+### Run the program
+- To use the default editor (Visual Studio Code), run:
+    ```bash
+    ./script.sh
+    ```
+- To use a different editor, run:
+    ```bash
+    ./script.sh <app_name>
+    ```
+  where `<app_name>` is the name of an editor of your choice.
 
 ## Notes
 To associate additional file extensions with the specified application, they
