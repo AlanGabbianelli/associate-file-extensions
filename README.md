@@ -6,7 +6,7 @@ application on macOS. By default, it associates the file extensions with Visual 
 
 ## Dependencies
 - [Homebrew](https://github.com/Homebrew/brew)
-- [duti](https://github.com/moretension/duti)
+- [duti](https://github.com/moretension/duti) (no need to install it, the script does it)
 - The application to associate the file extensions with
 
 ## How it works
@@ -28,7 +28,6 @@ The script runs silently. If a duti command fails to associate an extension,
 it will print the error message from the command directly to the terminal.
 
 ## Usage
-
 ### Clone the repo
 ```bash
 git clone git@github.com:AlanGabbianelli/associate-file-extensions.git
