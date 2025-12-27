@@ -28,22 +28,36 @@ The script runs silently. If a duti command fails to associate an extension,
 it will print the error message from the command directly to the terminal.
 
 ## Usage
-### Clone the repo
+You can use this remotely or locally.
+
+### Remote
+- To use the default editor (Visual Studio Code), run:
+    ```bash
+    /bin/bash -c "$(curl -L https://raw.githubusercontent.com/AlanGabbianelli/associate-file-extensions/refs/heads/main/script.sh)"
+    ```
+- To use a different editor, run:
+    ```bash
+    /bin/bash -c "$(curl -L https://raw.githubusercontent.com/AlanGabbianelli/associate-file-extensions/refs/heads/main/script.sh)" _ <app_name>
+    ```
+  where `<app_name>` is the name of an editor of your choice.
+
+### Local
+#### Clone the repo
 ```bash
 git clone git@github.com:AlanGabbianelli/associate-file-extensions.git
 ```
 
-### Move to the repo's directory
+#### Move to the repo's directory
 ```bash
 cd associate-file-extensions
 ```
 
-### Make the script executable
+#### Make the script executable
 ```bash
 chmod +x ./script.sh
 ```
 
-### Run the program
+#### Run the program
 - To use the default editor (Visual Studio Code), run:
     ```bash
     ./script.sh
